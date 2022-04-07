@@ -52,7 +52,6 @@ public class Filters {
      */
     @CheckReturnValue
     public Filters setBand(int band, float gain) {
-        if (gain < -0.25 || gain > 1) throw new IllegalArgumentException("Gain must be -0.25 to 1.0");
         bands[band] = gain;
         return this;
     }
