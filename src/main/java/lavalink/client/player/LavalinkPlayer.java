@@ -96,7 +96,7 @@ public class LavalinkPlayer implements IPlayer {
                 json.put("endTime", trackData.endPos);
             }
             json.put("pause", paused);
-            json.put("volume", volume);
+            //json.put("volume", filters.getVolume());
             //noinspection ConstantConditions
             link.getNode(true).send(json.toString());
 
